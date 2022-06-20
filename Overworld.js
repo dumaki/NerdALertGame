@@ -65,7 +65,10 @@ class Overworld {
  }
 
  init() {
-  this.startMap(window.OverworldMaps.Lobby);
+  // this.hud = new Hud();
+  // this.hud.init(document.querySelector(".game-container"));
+
+  this.startMap(window.OverworldMaps.BackLotHallway);
 
 
   this.bindActionInput();
@@ -79,8 +82,6 @@ class Overworld {
 
   this.map.startCutscene([
     // { type: "battle" }
-    // { type: "changeMap", map: "DemoRoom"}
-    // { type: "textMessage", text: "This is the very first message!"}
   ])
 
  }

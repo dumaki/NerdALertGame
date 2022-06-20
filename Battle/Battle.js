@@ -9,7 +9,8 @@ class Battle {
         xp: 75,
         maxXp: 100,
         level: 1,
-        status: null
+        status: null,
+        isPlayerControlled: true
       }, this),
       "enemy1": new Combatant({
         ...Pizzas.v001,
@@ -58,6 +59,17 @@ class Battle {
       combatant.id = key;
       combatant.init(this.element)
     })
+
+    this.turnCycle = new this.turnCycle({
+      battle: this,
+      onNewEvent: event => {
+        return new Promise(resolve => {
+          const battleEvent = new BattleEvent(event, this)
+          battleEvent.init(resolve);
+        })
+      }
+    })
+    this.turnCycle.init();
 
   }
 

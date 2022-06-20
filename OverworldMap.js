@@ -128,11 +128,11 @@ window.OverworldMaps = {
                 text: "I'm busy kid.",
                 faceHero: "postman"
               },
-              {
-                type: "textMessage",
-                text: "Mail doesn't deliver itself!",
-                faceHero: "postman"
-              },
+              // {
+              //   type: "textMessage",
+              //   text: "Mail doesn't deliver itself!",
+              //   faceHero: "postman"
+              // },
             ]
           }]
         }),
@@ -516,7 +516,7 @@ window.OverworldMaps = {
         guard: new Person({
           x: utils.withGrid(8),
           y: utils.withGrid(2),
-          src: "images/characters/people/toshi.png",
+          src: "images/characters/people/SecurityGuard.png",
         }),
         checkInL1: new Person({
           x: utils.withGrid(6),
