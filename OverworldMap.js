@@ -105,8 +105,8 @@ class OverworldMap {
 
 window.OverworldMaps = {
     BackLotHallway: {
-      lowerSrc: "images/maps/BackLotHallwayLower.png",
-      upperSrc: "images/maps/BackLotHallwayUpper.png",
+      lowerSrc: "/images/maps/BackLotHallwayLower.png",
+      upperSrc: "/images/maps/BackLotHallwayUpper.png",
       gameObjects: {
         hero: new Person({
           isPlayerControlled: true,
@@ -116,7 +116,7 @@ window.OverworldMaps = {
         postman: new Person({
           x: utils.withGrid(1),
           y: utils.withGrid(6),
-          src: "images/characters/people/postman.png",
+          src: "/images/characters/people/postman.png",
           behaviorLoop: [{
             who: "postman",
             type: "stand",
@@ -139,7 +139,7 @@ window.OverworldMaps = {
         mailTruck: new Person({
           x: utils.withGrid(3),
           y: utils.withGrid(2),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
             events: [{
               type: "textMessage",
@@ -150,7 +150,7 @@ window.OverworldMaps = {
         mailboxA: new Person({
           x: utils.withGrid(0),
           y: utils.withGrid(5),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
             events: [{
               type: "textMessage",
@@ -161,7 +161,7 @@ window.OverworldMaps = {
         mailboxB: new Person({
           x: utils.withGrid(0),
           y: utils.withGrid(6),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
             events: [{
               type: "textMessage",
@@ -172,7 +172,7 @@ window.OverworldMaps = {
         poster: new Person({
           x: utils.withGrid(6),
           y: utils.withGrid(3),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
             events: [{
                 type: "textMessage",
@@ -303,8 +303,8 @@ window.OverworldMaps = {
       },
     },
     HallwayCredits: {
-      lowerSrc: "images/maps/HallwayCreditsLower.png",
-      upperSrc: "images/maps/HallwayCreditsUpper.png",
+      lowerSrc: "/images/maps/HallwayCreditsLower.png",
+      upperSrc: "/images/maps/HallwayCreditsUpper.png",
       gameObjects: {
         hero: new Person({
           isPlayerControlled: true,
@@ -314,7 +314,7 @@ window.OverworldMaps = {
         DoorA: new Person({
           x: utils.withGrid(7),
           y: utils.withGrid(6),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
             events: [{
               type: "textMessage",
@@ -325,7 +325,7 @@ window.OverworldMaps = {
         DoorB: new Person({
           x: utils.withGrid(8),
           y: utils.withGrid(6),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
             events: [{
               type: "textMessage",
@@ -505,8 +505,8 @@ window.OverworldMaps = {
       }
     },
     Lobby: {
-      lowerSrc: "images/maps/LobbyLower.png",
-      upperSrc: "images/maps/LobbyUpper.png",
+      lowerSrc: "/images/maps/LobbyLower.png",
+      upperSrc: "/images/maps/LobbyUpper.png",
       gameObjects: {
         hero: new Person({
           isPlayerControlled: true,
@@ -516,12 +516,12 @@ window.OverworldMaps = {
         guard: new Person({
           x: utils.withGrid(8),
           y: utils.withGrid(2),
-          src: "images/characters/people/SecurityGuard.png",
+          src: "/images/characters/people/SecurityGuard.png",
         }),
         checkInL1: new Person({
           x: utils.withGrid(6),
           y: utils.withGrid(2),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
@@ -532,7 +532,7 @@ window.OverworldMaps = {
         checkInL2: new Person({
           x: utils.withGrid(6),
           y: utils.withGrid(3),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
@@ -543,7 +543,7 @@ window.OverworldMaps = {
         checkInT1: new Person({
           x: utils.withGrid(7),
           y: utils.withGrid(3),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
@@ -554,7 +554,7 @@ window.OverworldMaps = {
         checkInT2: new Person({
           x: utils.withGrid(8),
           y: utils.withGrid(3),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
@@ -565,7 +565,7 @@ window.OverworldMaps = {
         checkInT3: new Person({
           x: utils.withGrid(9),
           y: utils.withGrid(3),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
@@ -576,7 +576,7 @@ window.OverworldMaps = {
         checkInR1: new Person({
           x: utils.withGrid(10),
           y: utils.withGrid(2),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
@@ -587,7 +587,7 @@ window.OverworldMaps = {
         checkInR2: new Person({
           x: utils.withGrid(10),
           y: utils.withGrid(3),
-          src: "images/characters/people/object.png",
+          src: "/images/characters/people/object.png",
           talking: [{
               events: [{
                   type: "textMessage",
